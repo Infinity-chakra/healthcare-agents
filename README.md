@@ -31,6 +31,10 @@ Healthcare Agents is a model-agnostic prompt library for healthcare administrati
 
 Each agent is a long-form Markdown specialist with YAML frontmatter, role-specific source awareness, compliance boundaries, operational workflows, concrete deliverable templates, best-input guidance, output modes, and cross-agent handoff rules. The pack installs into tools that support subagents, custom instructions, repository rules, or `SKILL.md` folders.
 
+See [Principles and Concepts](docs/principles-and-concepts.md) for the
+repository's design model, operating boundaries, evidence controls, and
+human-review principles.
+
 ## TL;DR
 
 | You need | Healthcare Agents gives you |
