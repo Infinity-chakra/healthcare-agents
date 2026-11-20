@@ -20,11 +20,14 @@
 
 ## Git Workflow
 
+- Never push commits, open pull requests, merge pull requests, or delete remote branches automatically.
+- Pushes and remote pull requests require explicit user approval in the current request.
 - Do not push directly to `main`.
-- For requested edits, create a short-lived branch, commit there, push the branch, open a PR, and merge the PR with `gh pr merge`.
+- For requested edits, create a short-lived branch and commit there unless the user requests otherwise.
+- After committing, stop before any remote operation unless the user explicitly requests push or PR actions.
 - Do not merge the feature branch into local `main` before opening or merging the PR. That creates duplicate local merge commits and makes `main` appear ahead/behind after GitHub merges the PR.
 - After a PR is merged, run `git fetch origin --prune` and align local `main` to `origin/main` before continuing work.
-- For docs-only or metadata-only changes, the streamlined path is: branch -> commit -> push branch -> `gh pr create` -> `gh pr merge --merge --delete-branch` -> sync local `main`.
+- Docs-only or metadata-only changes may use branch -> commit by default. Remote actions remain explicit.
 
 ## Self-Improvement Loop
 
