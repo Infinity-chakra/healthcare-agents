@@ -14,7 +14,7 @@
   <a href="#agent-catalog"><img src="https://img.shields.io/badge/agents-51-blue?style=flat-square" alt="51 agents"></a>
   <a href="#eval-status"><img src="https://img.shields.io/badge/eval-51%2F51%20evaluated-brightgreen?style=flat-square" alt="51 of 51 agents have tracked eval rows"></a>
   <a href="#supported-tools"><img src="https://img.shields.io/badge/Claude%20%7C%20Codex%20%7C%20OpenCode%20%7C%20Cursor-compatible-8A2BE2?style=flat-square" alt="Claude, Codex, OpenCode, and Cursor compatible"></a>
-  <a href="https://github.com/ajhcs/healthcare-agents/releases/tag/v1.6.0"><img src="https://img.shields.io/badge/version-1.6.0-blue?style=flat-square" alt="v1.6.0"></a>
+  <a href="https://github.com/infinity-chakra/healthcare-agents/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="v1.0.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-green?style=flat-square" alt="Apache 2.0 license"></a>
 </p>
 
@@ -181,7 +181,7 @@ for the research basis, validation evidence, and scope limits.
 Codex plugin install:
 
 ```bash
-git clone https://github.com/ajhcs/healthcare-agents.git
+git clone https://github.com/infinity-chakra/healthcare-agents.git
 cd healthcare-agents
 bash scripts/install-codex-plugin.sh
 ```
@@ -211,13 +211,13 @@ npx --yes healthcare-agents install
 GitHub-backed fallback:
 
 ```bash
-npx --yes github:ajhcs/healthcare-agents install
+npx --yes github:infinity-chakra/healthcare-agents install
 ```
 
 Shell installer fallback:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ajhcs/healthcare-agents/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/infinity-chakra/healthcare-agents/main/install.sh | bash
 ```
 
 Target a specific tool:
@@ -332,7 +332,7 @@ Using the healthit-interoperability-engineer instructions, review this HL7v2 int
 Manual project install:
 
 ```bash
-git clone https://github.com/ajhcs/healthcare-agents.git
+git clone https://github.com/infinity-chakra/healthcare-agents.git
 mkdir -p .claude/agents
 cp healthcare-agents/agents/*.md .claude/agents/
 ```
@@ -550,7 +550,7 @@ The GPT-5.6 runtime path routes from compact generated indexes, then loads one s
 Install the eval loop into another project that already has `agents/*.md`:
 
 ```bash
-git clone https://github.com/ajhcs/healthcare-agents.git
+git clone https://github.com/infinity-chakra/healthcare-agents.git
 bash healthcare-agents/scripts/install-self-improvement-kit.sh /path/to/project
 ```
 
